@@ -1,0 +1,26 @@
+{
+  "name": "de-ai-visual-review",
+  "version": "0.1.0",
+  "owner": "Local workspace",
+  "updated_at": "2026-10-26",
+  "status": "active",
+  "maturity_tier": "production",
+  "lifecycle_stage": "production",
+  "context_budget_tier": "production",
+  "review_cadence": "monthly",
+  "skill_ir_source": "reports/skill-ir.json",
+  "skill_archetype": "production",
+  "target_platforms": [
+    "openai",
+    "claude",
+    "generic",
+    "agent-skills-compatible",
+    "vscode"
+  ],
+  "factory_components": [
+    "references",
+    "scripts",
+    "evals",
+    "reports"
+  ]
+}

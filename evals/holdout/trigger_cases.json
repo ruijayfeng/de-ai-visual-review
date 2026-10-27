@@ -1,0 +1,49 @@
+{
+  "recommended_threshold": 0.48,
+  "should_trigger": [
+    {
+      "text": "This page has that ChatGPT landing-page look. Can you strip the template feel and fix the HTML/CSS?",
+      "family": "holdout_en_look"
+    },
+    {
+      "text": "帮我看看这个 canvas 动画，镜头和文字没有节奏，像自动生成的。",
+      "family": "holdout_zh_canvas"
+    },
+    {
+      "text": "The UI has five font sizes, three primary buttons, and cards everywhere. Audit and clean it up.",
+      "family": "holdout_design_audit"
+    },
+    {
+      "text": "Make this LLM-generated hero feel less generic without changing the product copy.",
+      "family": "holdout_less_generic"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "Design a new visual identity for my coffee brand.",
+      "family": "holdout_brand"
+    },
+    {
+      "text": "Write a blog post about AI design trends.",
+      "family": "holdout_article"
+    },
+    {
+      "text": "Fix the broken login flow.",
+      "family": "holdout_functional_bug"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "Check this React app for memory leaks.",
+      "family": "holdout_frontend_perf"
+    },
+    {
+      "text": "Convert this Figma design into HTML.",
+      "family": "holdout_build"
+    },
+    {
+      "text": "Make the logo bigger and use the brand green.",
+      "family": "holdout_one_off"
+    }
+  ]
+}

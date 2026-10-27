@@ -1,0 +1,245 @@
+{
+  "optimizer_hints": {
+    "capability": "Audit and repair templated AI-generated web pages and code-driven animations",
+    "inputs": [
+      "existing HTML/CSS/JS/TSX",
+      "React/Vue/Svelte components",
+      "running pages",
+      "screenshots",
+      "code animations"
+    ],
+    "trigger_actions": [
+      "去 AI 味",
+      "修掉模板感",
+      "审查页面设计",
+      "审查代码动画",
+      "review AI-generated visual output",
+      "de-slop a page",
+      "fix generic AI design"
+    ],
+    "exclusions": [
+      "new brand or page from scratch",
+      "copywriting only",
+      "backend debugging",
+      "security or accessibility audit only",
+      "prompt list only",
+      "explain-only questions"
+    ],
+    "artifacts": [
+      "web page",
+      "HTML/CSS/JS",
+      "React/Vue/Svelte component",
+      "code animation",
+      "motion timeline"
+    ]
+  },
+  "fallback_positive_concepts": [
+    "deai_visual_review",
+    "visual_artifact",
+    "design_passes",
+    "repair_output"
+  ],
+  "positive_concepts": {
+    "deai_visual_review": {
+      "weight": 0.25,
+      "phrases": [
+        "去 ai 味",
+        "ai 味",
+        "ai-generated",
+        "templated",
+        "模板感",
+        "像 ai 做的",
+        "ai slop",
+        "de-slop",
+        "generic ai",
+        "less like ai",
+        "not look ai",
+        "review and repair",
+        "audit and repair",
+        "template feel",
+        "机械",
+        "没有节奏",
+        "节奏很机械",
+        "llm-generated",
+        "less generic",
+        "automatic-looking",
+        "自动生成",
+        "像自动生成"
+      ]
+    },
+    "visual_artifact": {
+      "weight": 0.35,
+      "phrases": [
+        "web page",
+        "landing page",
+        "html",
+        "css",
+        "js",
+        "code-driven animation",
+        "code animation",
+        "页面",
+        "代码动画",
+        "动效",
+        "ui",
+        "react",
+        "vue",
+        "svelte",
+        "remotion",
+        "motion timeline",
+        "page",
+        "ui",
+        "canvas",
+        "hero"
+      ]
+    },
+    "design_passes": {
+      "weight": 0.1,
+      "phrases": [
+        "redundant copy",
+        "decorative containers",
+        "color roles",
+        "type and alignment",
+        "sharpen focus",
+        "retime motion",
+        "typography",
+        "hierarchy",
+        "字号",
+        "对齐",
+        "重点",
+        "配色",
+        "卡片",
+        "文案",
+        "cards",
+        "font sizes",
+        "primary buttons"
+      ]
+    },
+    "repair_output": {
+      "weight": 0.3,
+      "phrases": [
+        "repair",
+        "fix",
+        "edit",
+        "verify",
+        "直接改",
+        "帮我改",
+        "能改就改",
+        "审查",
+        "检查",
+        "怎么改",
+        "怎么修",
+        "去掉无意义",
+        "audit",
+        "clean it up",
+        "clean up",
+        "整理一下"
+      ]
+    }
+  },
+  "negative_concepts": {
+    "new_design": {
+      "weight": 0.45,
+      "exclusive": true,
+      "phrases": [
+        "from scratch",
+        "brand-new",
+        "new brand",
+        "create a landing page",
+        "build a page",
+        "design a new",
+        "从零",
+        "全新设计",
+        "做一个新页面",
+        "搭一个页面",
+        "build a dashboard",
+        "build a new page"
+      ]
+    },
+    "copy_only": {
+      "weight": 0.4,
+      "exclusive": true,
+      "phrases": [
+        "copywriting only",
+        "only copy",
+        "rewrite this paragraph",
+        "只改文案",
+        "润色文案",
+        "no code"
+      ]
+    },
+    "backend": {
+      "weight": 0.5,
+      "exclusive": true,
+      "phrases": [
+        "api endpoint",
+        "backend",
+        "database",
+        "server code",
+        "接口报错",
+        "后端"
+      ]
+    },
+    "a11y_only": {
+      "weight": 0.4,
+      "exclusive": true,
+      "phrases": [
+        "accessibility audit",
+        "a11y audit",
+        "wcag audit",
+        "only accessibility",
+        "只做无障碍"
+      ]
+    },
+    "prompt_only": {
+      "weight": 0.4,
+      "exclusive": true,
+      "phrases": [
+        "prompt only",
+        "prompt list",
+        "just give me prompts",
+        "只要提示语",
+        "提示语清单"
+      ]
+    },
+    "explain_only": {
+      "weight": 0.35,
+      "exclusive": true,
+      "phrases": [
+        "explain what",
+        "teach me",
+        "what does ai slop mean",
+        "解释一下",
+        "科普"
+      ]
+    },
+    "translate_only": {
+      "weight": 0.4,
+      "exclusive": true,
+      "phrases": [
+        "translate",
+        "into japanese",
+        "翻译"
+      ]
+    },
+    "summary_only": {
+      "weight": 0.35,
+      "exclusive": true,
+      "phrases": [
+        "summarize",
+        "summary only",
+        "总结一下",
+        "只要总结"
+      ]
+    },
+    "brainstorm_only": {
+      "weight": 0.35,
+      "exclusive": true,
+      "phrases": [
+        "brainstorm",
+        "visual directions",
+        "design ideas",
+        "头脑风暴"
+      ]
+    }
+  }
+}

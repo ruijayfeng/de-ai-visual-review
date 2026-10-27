@@ -1,0 +1,89 @@
+{
+  "recommended_threshold": 0.48,
+  "should_trigger": [
+    {
+      "text": "这个页面一看就是 DeepSeek 做的，帮我审查一下，去掉 AI 味，直接改代码。",
+      "family": "zh_deai_fix"
+    },
+    {
+      "text": "Review this landing page. It feels templated and over-carded; fix the copy, color roles, and motion.",
+      "family": "en_deai_fix"
+    },
+    {
+      "text": "我这边的代码动画动效很机械，每个元素都是 250ms，帮我看看怎么改。",
+      "family": "motion_repair"
+    },
+    {
+      "text": "Check this HTML/CSS page for generic AI design: repeated copy, too many cards, purple gradients.",
+      "family": "visual_audit"
+    },
+    {
+      "text": "Make this LLM-generated page feel intentional before delivery; keep the structure but reduce the template feel.",
+      "family": "rephrase"
+    },
+    {
+      "text": "审查这个 React 页面，重点看字号层级、图标对齐和注意力焦点，能改就改。",
+      "family": "zh_ui_review"
+    },
+    {
+      "text": "这段 Remotion 动画的镜头和文字出场没有节奏，帮我去掉无意义动效。",
+      "family": "code_animation"
+    },
+    {
+      "text": "Can you de-slop this UI? It looks like an AI template; audit and repair the HTML/CSS.",
+      "family": "slang"
+    }
+  ],
+  "should_not_trigger": [
+    {
+      "text": "Create a brand-new landing page for my startup from scratch.",
+      "family": "new_design"
+    },
+    {
+      "text": "Rewrite this paragraph to sound less formal; no code.",
+      "family": "copy_only"
+    },
+    {
+      "text": "Fix the API endpoint returning 500.",
+      "family": "backend"
+    },
+    {
+      "text": "Run a WCAG accessibility audit on this form and list violations.",
+      "family": "a11y_only"
+    },
+    {
+      "text": "Give me a list of prompts for making better slides.",
+      "family": "prompt_only"
+    },
+    {
+      "text": "Explain what AI slop means.",
+      "family": "explain_only"
+    },
+    {
+      "text": "Build a dashboard with React and charts.",
+      "family": "new_build"
+    },
+    {
+      "text": "Translate the copy on this page into Japanese.",
+      "family": "translate_only"
+    }
+  ],
+  "near_neighbor": [
+    {
+      "text": "Review this React component for security issues and missing loading states.",
+      "family": "frontend_security_review"
+    },
+    {
+      "text": "Brainstorm some visual directions for this page; don't inspect the code yet.",
+      "family": "brainstorm_only"
+    },
+    {
+      "text": "Make the logo bigger and change the header color to blue.",
+      "family": "one_off_visual_change"
+    },
+    {
+      "text": "Summarize this design article for me.",
+      "family": "summary_only"
+    }
+  ]
+}
